@@ -12,7 +12,6 @@ void preenche(int* vet){
     int i=0,k=0;
     for(i=0;i<1000;i++){
         printf("\n");
-TERRIBLETOD-patch-1
         for(k=0;k<20;k++){
         vet[i]=rand()%100000;
         printf("%d\t",vet[i]);
@@ -24,7 +23,6 @@ TERRIBLETOD-patch-1
     }}
 
 }
- TERRIBLETOD-patch-1
 
 void acha_menor_maior(int* vet)
 {
@@ -61,7 +59,6 @@ int main()
     int *vet;
     vet=aloc();
     preenche(vet);
- TERRIBLETOD-patch-1
     acha_menor_maior(vet);
 
     tirarmedia(vet);
