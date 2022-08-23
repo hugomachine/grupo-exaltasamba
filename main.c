@@ -12,18 +12,12 @@ void preenche(int* vet){
     int i=0,k=0;
     for(i=0;i<1000;i++){
         printf("\n");
-        for(k=0;k<20;k++){
-        vet[i]=rand()%100000;
-        printf("%d\t",vet[i]);
-
         for(k=0;k<10;k++){
         vet[i]=rand()%100000;printf("%d\t",vet[i]);
- main
         i++;
     }}
 
 }
-
 void acha_menor_maior(int* vet)
 {
 int i=0;
@@ -42,7 +36,6 @@ int*menor,*maior;
     printf("\n\nO maior numero do vetor eh: %d",*maior);
     printf("\nO menor numero do vetor eh: %d\n\n",*menor);
 }
- int main()
 
 void tirarmedia(int* vet){
     int i=0,soma=0;
@@ -51,10 +44,9 @@ void tirarmedia(int* vet){
         soma+=vet[i];
     }
     media=soma/1000;
-    printf("\n\n\n\tMEDIA DOS VALORES DO VETOR: %.2f ",media);
+    printf("\n\nMedia dos valores do vetor: %.2f\n\n ",media);
 }
 int main()
- main
 {
     int *vet;
     vet=aloc();
@@ -62,7 +54,6 @@ int main()
     acha_menor_maior(vet);
 
     tirarmedia(vet);
- main
 
     return 0;
 }
