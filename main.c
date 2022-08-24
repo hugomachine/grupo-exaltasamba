@@ -13,10 +13,17 @@ void preenche(int* vet){
     for(i=0;i<1000;i++){
         printf("\n");
         for(k=0;k<10;k++){
-        vet[i]=rand()%100000;printf("%d\t",vet[i]);
+        vet[i]=rand()%100000;
+        printf("%d\t",vet[i]);
         i++;
     }}
 
+}
+void achamediana(int *vet){
+    int i=0;
+    float mediana;
+    mediana=(vet[499]+vet[500])/2;
+    printf("MEDIANA=%.2f",mediana);
 }
 void acha_menor_maior(int* vet)
 {
@@ -52,8 +59,7 @@ int main()
     vet=aloc();
     preenche(vet);
     acha_menor_maior(vet);
-
     tirarmedia(vet);
-
+    achamediana(vet);
     return 0;
 }
