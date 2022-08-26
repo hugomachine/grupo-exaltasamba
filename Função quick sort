@@ -1,0 +1,38 @@
+void quicksort(int*vet,int first,int last)
+{
+    int i, j, pivot, temp;
+    if(first<last)
+    {
+        pivot=first;
+        i=first;
+
+        j=last;
+
+        while(i<j)
+        {
+            while(vet[i]<=vet[pivot]&&i<last)
+                i++;
+
+            while(vet[j]>vet[pivot])
+                j--;
+
+            if(i<j)
+            {
+
+                temp=vet[i];
+                vet[i]=vet[j];
+                vet[j]=temp;
+
+            }
+
+        }
+
+        temp=vet[pivot];
+        vet[pivot]=vet[j];
+        vet[j]=temp;
+        quicksort(vet,first,j-1);
+        quicksort(vet,j+1,last);
+
+    }
+
+}
